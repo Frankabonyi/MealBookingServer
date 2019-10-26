@@ -5,7 +5,7 @@ const app = express();
 
 const PORT = 9001;
 
-app.use(bodyParser.json);
+app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
     return res.send('API is cool man');
