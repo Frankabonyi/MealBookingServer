@@ -11,6 +11,7 @@ const MealServices = {
             newMeal.name = meal.name;
             newMeal.size = meal.size;
             newMeal.prize = meal.prize;
+            return newMeal;
         });
         return validMeals;
     },
@@ -25,7 +26,7 @@ const MealServices = {
     },
 
     getAMeal(id) {
-        const meal = dummyData.meals.find(meal => meal.id = id);
+        const meal = dummyData.meals.find(meal => meal.id == id);
         return meal || {};
     }
 
